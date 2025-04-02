@@ -47,7 +47,7 @@
 
 ![image](https://github.com/user-attachments/assets/5533cef0-7b0e-4583-b0f4-ee5e59ffb66c)
 
-- `cd grafana_stack_for_docker смена директории
+- `cd grafana_stack_for_docker` смена директории
 
 ![image](https://github.com/user-attachments/assets/cd2b0fb2-41ee-4d08-9c85-22f2fa3e7149)
 
