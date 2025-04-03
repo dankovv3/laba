@@ -1,4 +1,4 @@
-# Юнусова Ильмира К-ИСП-39-2
+![image](https://github.com/user-attachments/assets/c5f033fc-74e8-46fc-8c3f-df5b56b3aa1e)# Юнусова Ильмира К-ИСП-39-2
 
 ![image](https://github.com/user-attachments/assets/ad7966b5-9668-4f1a-a012-a092ae46f8b5)
 
@@ -132,3 +132,40 @@
 - успешное завершение, работа мониторинга CPU
 
 ![image](https://github.com/user-attachments/assets/892bf58d-6f20-442a-92c4-09b475512a4a)
+
+
+Виктория метрикс
+
+- Запускаю докер компос, захожу в графану, создаю новое соединение заполняю URL
+
+![image](https://github.com/user-attachments/assets/302bd928-3b34-4e27-a976-49f37428f883)
+ 
+Выбираю Code  снизу, ввожу параметр запроса OILCOINT_metric1
+
+![image](https://github.com/user-attachments/assets/9a7c01a5-332a-46c5-a909-a708566bb1dd)
+
+Далее захожу в терминал ввожу
+
+Первая команда:
+
+`echo -e "# TYPE OILCOINT_metric1 gauge\nOILCOINT_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus`
+Она генерирует и отправляет данные метрики OILCOINT_metric1 (с типом gauge и значением 0) на локальный Prometheus-сервер через POST-запрос.
+
+Вторая команда:
+
+`curl -G 'http://localhost:8428/api/v1/query' --data-urlencode 'query=OILCOINT_metric1'`
+Она делает GET-запрос к API Prometheus для получения текущего значения метрики OILCOINT_metric1.
+
+![image](https://github.com/user-attachments/assets/53462c88-a9da-486c-8522-112bbe911697)
+
+Дальше создаю дэшборд с соединением в графане и ввожу параметр
+
+![image](https://github.com/user-attachments/assets/f5b5bca8-1ae6-40ce-bc1f-998bdb5c4fb7)
+
+Захожу на викторию метрикс ввожу тот же запрос и получаю результат
+
+![image](https://github.com/user-attachments/assets/105a8835-0070-45b4-9bbb-a907f0da651f)
+
+
+ 
+
