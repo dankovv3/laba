@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c5f033fc-74e8-46fc-8c3f-df5b56b3aa1e)# Юнусова Ильмира К-ИСП-39-2
+Юнусова Ильмира К-ИСП-39-2
 
 ![image](https://github.com/user-attachments/assets/ad7966b5-9668-4f1a-a012-a092ae46f8b5)
 
